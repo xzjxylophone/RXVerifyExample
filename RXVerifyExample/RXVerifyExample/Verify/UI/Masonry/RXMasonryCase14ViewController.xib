@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RXMasonryCase14ViewController">
+            <connections>
+                <outlet property="stairView" destination="HZa-OU-cqv" id="9L0-cC-Dx4"/>
+                <outlet property="tableView" destination="ydt-nJ-WiP" id="n18-3M-g0n"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自动决定高度" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxi-sg-dPV">
+                    <rect key="frame" x="16" y="100" width="382" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZa-OU-cqv" customClass="RXMasonryCase14StairView">
+                    <rect key="frame" x="16" y="125" width="382" height="240"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="240" placeholder="YES" id="raY-L2-CUm"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用在UITableViewCell里面" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z07-7S-DQZ">
+                    <rect key="frame" x="16" y="373" width="382" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ydt-nJ-WiP">
+                    <rect key="frame" x="16" y="398" width="382" height="482"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="z07-7S-DQZ" secondAttribute="trailing" constant="16" id="21e-ll-1YT"/>
+                <constraint firstItem="HZa-OU-cqv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="995-qn-LPf"/>
+                <constraint firstAttribute="trailing" secondItem="ydt-nJ-WiP" secondAttribute="trailing" constant="16" id="BHK-l3-bLO"/>
+                <constraint firstItem="ydt-nJ-WiP" firstAttribute="top" secondItem="z07-7S-DQZ" secondAttribute="bottom" constant="8" id="OeZ-S0-Jfe"/>
+                <constraint firstAttribute="trailing" secondItem="zxi-sg-dPV" secondAttribute="trailing" constant="16" id="Sfn-Q7-jKE"/>
+                <constraint firstAttribute="bottom" secondItem="ydt-nJ-WiP" secondAttribute="bottom" constant="16" id="UHg-h9-og8"/>
+                <constraint firstItem="ydt-nJ-WiP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="epJ-MN-oRx"/>
+                <constraint firstItem="z07-7S-DQZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="j3G-Vi-MQz"/>
+                <constraint firstAttribute="trailing" secondItem="HZa-OU-cqv" secondAttribute="trailing" constant="16" id="nu4-Mc-XyV"/>
+                <constraint firstItem="zxi-sg-dPV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="oa3-mg-fct"/>
+                <constraint firstItem="zxi-sg-dPV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="qBi-m2-cVe"/>
+                <constraint firstItem="HZa-OU-cqv" firstAttribute="top" secondItem="zxi-sg-dPV" secondAttribute="bottom" constant="8" id="tnB-oS-7Id"/>
+                <constraint firstItem="z07-7S-DQZ" firstAttribute="top" secondItem="HZa-OU-cqv" secondAttribute="bottom" constant="8" id="vSC-7K-ADR"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="154"/>
+        </view>
+    </objects>
+</document>

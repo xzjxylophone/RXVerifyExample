@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RXMasonryCase1ViewController">
+            <connections>
+                <outlet property="contentView" destination="YJA-xF-ZAG" id="6JO-BT-Pec"/>
+                <outlet property="titleLabel" destination="NEP-9G-561" id="QBF-bO-BsB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEP-9G-561" userLabel="instructionLabel">
+                    <rect key="frame" x="36" y="80" width="342" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="TJF-jd-fy3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJA-xF-ZAG" userLabel="contentView1">
+                    <rect key="frame" x="36" y="304" width="343" height="50"/>
+                    <color key="backgroundColor" red="0.79607844350000001" green="0.79607844350000001" blue="0.79607844350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="rR6-n7-3VK"/>
+                    </constraints>
+                </view>
+                <stepper opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="9gx-c3-5Ac">
+                    <rect key="frame" x="285" y="381" width="94" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="94" id="OAC-C7-7zo"/>
+                        <constraint firstAttribute="height" constant="29" id="kcW-p3-Wcn"/>
+                    </constraints>
+                    <connections>
+                        <action selector="stepperValueChanged:" destination="-1" eventType="valueChanged" id="HlV-yB-eeK"/>
+                    </connections>
+                </stepper>
+                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="4WD-5j-0E6">
+                    <rect key="frame" x="36" y="381" width="94" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="94" id="L3I-Z6-tAC"/>
+                        <constraint firstAttribute="height" constant="29" id="Nma-6h-m3D"/>
+                    </constraints>
+                    <connections>
+                        <action selector="stepperValueChanged:" destination="-1" eventType="valueChanged" id="ftK-iT-sMO"/>
+                    </connections>
+                </stepper>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YJA-xF-ZAG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="36" id="4jU-oe-6ZQ"/>
+                <constraint firstAttribute="trailing" secondItem="NEP-9G-561" secondAttribute="trailing" constant="36" id="G5E-RL-lMC"/>
+                <constraint firstItem="4WD-5j-0E6" firstAttribute="top" secondItem="YJA-xF-ZAG" secondAttribute="bottom" constant="27" id="RQq-uv-dAq"/>
+                <constraint firstItem="YJA-xF-ZAG" firstAttribute="top" secondItem="NEP-9G-561" secondAttribute="bottom" constant="24" id="adr-yX-43b"/>
+                <constraint firstItem="9gx-c3-5Ac" firstAttribute="top" secondItem="YJA-xF-ZAG" secondAttribute="bottom" constant="27" id="e0B-5I-MC1"/>
+                <constraint firstItem="NEP-9G-561" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="36" id="i1C-vz-bZa"/>
+                <constraint firstAttribute="trailing" secondItem="YJA-xF-ZAG" secondAttribute="trailing" constant="35" id="iHp-WK-PZh"/>
+                <constraint firstAttribute="trailing" secondItem="9gx-c3-5Ac" secondAttribute="trailing" constant="35" id="oxo-L1-dqq"/>
+                <constraint firstItem="4WD-5j-0E6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="36" id="w0Z-gW-gTj"/>
+                <constraint firstItem="NEP-9G-561" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="yrE-WS-uSW"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="154"/>
+        </view>
+    </objects>
+</document>

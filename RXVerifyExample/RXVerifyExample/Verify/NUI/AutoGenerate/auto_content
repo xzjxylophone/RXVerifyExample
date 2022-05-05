@@ -1,0 +1,50 @@
+
+
+
+
+@property (nonatomic, strong) KSAdContentLogoView *contentLogoView;
+@property (nonatomic, strong) KSAdContentUserView *contentUserView;
+@property (nonatomic, strong) KSAdContentControlView *contentControlView;
+
+
+
+@property (nonatomic, strong) UIView *autoSizeView;
+
+@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UILabel *subTitleLabel;
+
+@property (nonatomic, strong) UIButton *button;
+
+
+
+
+
+
+
+
+@property (nonatomic, strong) UIView *contentView;
+@property (nonatomic, strong) UIImageView *appIconImageView;
+@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) KSAdStarView *starView;
+@property (nonatomic, strong) UILabel *downloadCountDescLabel;
+@property (nonatomic, strong) UILabel *subTitleLabel;
+@property (nonatomic, strong) UIButton *button;
+@property (nonatomic, strong) UIImageView *logoImageView;
+
+
+
+#pragma mark - UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 0;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return nil;
+}
+
+#pragma mark - UITableViewDelegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 44;
+}
