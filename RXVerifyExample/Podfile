@@ -1,0 +1,123 @@
+
+
+source 'https://github.com/cocoapods/specs.git'
+
+
+target 'RXVerifyExample' do
+#pod 'YYText'
+#pod 'YYImage'
+#pod 'YYModel'
+#pod 'YYCategories'
+#pod 'YYCache'
+#pod 'YYAsyncLayer'
+#pod 'YYDispatchQueuePool'
+
+pod 'React'
+
+pod 'YTKNetwork'
+
+pod 'UMCommon'  #由原来的UMCCommon变为UMCommon
+pod 'UMDevice'
+
+#可选集成，对应产品中稳定性模块（错误捕获），该功能已经独立成为新的应用性能监控产品U-APM
+ pod 'UMAPM'
+
+pod 'RXView'
+
+pod 'RXImagePickManager'
+pod 'YYKit'
+
+pod 'AliyunOSSiOS'
+
+pod 'RXCoreText'
+pod 'RXVCMediator'
+
+pod 'RXVerifyButton'
+
+pod 'RXTextView'
+
+pod 'AMapNavi'
+
+pod 'HWWeakTimer'
+
+pod 'RXPaddingView'
+
+pod 'RXCategory'
+
+pod 'RX3_XGPush'
+
+pod 'RXScrollView'
+pod 'RXPopView'
+
+pod 'RXAppDefine'
+
+pod 'RXTableViewItem'
+
+# 没有自动引入 RACEXTScope.h
+#pod 'ReactiveCocoa', '2.1.8'
+#pod 'ReactiveCocoa', '2.2.4'
+
+# 自动引入:RACEXTScope.h
+pod 'ReactiveObjC'
+
+pod 'AFNetworking'
+
+pod 'Aspects'
+
+pod 'RX3_TencentLiteSDK'
+
+pod 'fishhook'
+
+pod 'AFNetworking+RX'
+pod 'FLAnimatedImage'
+pod 'RXTableViewImpl'
+
+pod 'RXUserManager'
+
+pod 'MSWeakTimer'
+pod 'KSCrash'
+pod 'JLRoutes'
+
+pod 'Masonry'
+
+pod 'MBProgressHUD'
+
+pod 'coobjc'
+
+#pod 'MTHawkeye'
+
+#pod 'XTAudioPlayer'
+
+pod "MJRefresh"
+
+pod 'WechatOpenSDK'
+
+pod 'SDWebImage'
+#pod 'SDWebImage/GIF'
+
+pod 'Bytedance-UnionAD'
+
+pod 'Bifrost'
+
+
+pod 'SDWebImageWebPCoder'
+
+
+#pod 'GDTMobSDK'
+#pod 'KSAdSDK'
+#pod 'BaiduMobAdSDK'
+
+#pod 'Google-Mobile-Ads-SDK',  '7.52.0'
+#pod 'mopub-ios-sdk'
+
+#pod 'FBSDKCoreKit'
+# pod 'FBSDKLoginKit'
+# pod 'FBSDKShareKit'
+ 
+ pod 'FMDB'
+
+
+inhibit_all_warnings!
+
+end
+
