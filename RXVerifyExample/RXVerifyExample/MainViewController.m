@@ -221,6 +221,8 @@ static NSInteger a = 0;
     NSMutableDictionary *dict2 = [NSMutableDictionary dictionaryWithDictionary:dict];
     NSLog(@"dict2:%@", dict2);
     
+    [self test_array_range];
+    
 //    CGFloat ab = 3.2;
 //    CGFloat abc = 3.5;
 //    CGFloat abcd = 3.6;
@@ -368,6 +370,29 @@ static NSInteger a = 0;
 //        NSLog(@"333");
 //    });
     
+}
+- (void)test_array_range {
+    NSMutableArray *modelArray = [NSMutableArray new];
+    for (NSInteger i = 0; i < 11; i++) {
+        [modelArray addObject:@(i)];
+    }
+    NSInteger maxBatchCount = 12;
+    float modelArrayCount_float = (float)modelArray.count;
+    float maxBatchCount_float = (float)maxBatchCount;
+    // 向上取整
+    NSInteger loops = ceilf(modelArrayCount_float / maxBatchCount_float);
+    for (NSInteger i = 0; i < loops; i++) {
+        @autoreleasepool {
+            NSInteger startIndex = i * maxBatchCount;
+            NSInteger remain = modelArray.count - startIndex;
+            NSInteger length = MIN(remain, maxBatchCount);
+            NSRange range;
+            range.location = startIndex;
+            range.length = length;
+            NSArray *tmpArray = [modelArray subarrayWithRange:range];
+            NSLog(@"tmpArray:%@", [tmpArray componentsJoinedByString:@","]);
+        }
+    }
 }
 - (id)reportForScene:(NSString *)scene {
     NSLog(@"123456");
