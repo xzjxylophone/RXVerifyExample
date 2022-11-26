@@ -280,7 +280,7 @@ static NSInteger a = 0;
         @"RXStrangeXR", @"RXNotificationFirst", @"RXViewVisiable",
         @"RXVisiableTest", @"RXTestManager", @"RXJS",
         @"RXCSJ", @"RVWeb", @"RXGCDHTTPRequestHeaders", @"HeatMap",
-        @"RXNote"
+        @"RXNote", @"RXUIAnimation"
     ];
     
     // 数组倒叙
@@ -295,7 +295,7 @@ static NSInteger a = 0;
 //    NSLog(@"dict:%@", dict);
     
 #if 1
-
+    object = @"RXUIAnimation";
     object = @"RVTDW";
     object = @"RVRunTime";
 
