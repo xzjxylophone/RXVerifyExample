@@ -17,6 +17,7 @@
 #import "RXTidyMainViewController.h"
 #import "RXAutoGenerateManager.h"
 #import <UserNotifications/UserNotifications.h>
+#import <BUAdSDK/BUAdSDK.h>
 
 
 
@@ -53,6 +54,54 @@
     
     
     
+}
+
+- (void)setupBUAdSDK {
+
+#if __has_include(<BUAdTestMeasurement/BUAdTestMeasurement.h>)
+    #if DEBUG
+        // 测试工具
+        [BUAdTestMeasurementConfiguration configuration].debugMode = YES;
+    #endif
+#endif
+
+    BUAdSDKConfiguration *configuration = [BUAdSDKConfiguration configuration];
+    configuration.appID = @"1111";
+//    configuration.privacyProvider = [[BUDPrivacyProvider alloc] init];
+    configuration.appLogoImage = [UIImage imageNamed:@"AppIcon"];
+    configuration.debugLog = @(1);
+    
+#ifdef IS_MEDIATION
+    // 如果使用聚合维度功能，则务必将以下字段设置为YES
+    // 并检查工程有引用CSJMediation.framework，这样SDK初始化时将启动聚合相关必要组件
+    configuration.useMediation = YES;
+    [self useMediationSettings];
+#endif
+    
+    [BUAdSDKManager startWithAsyncCompletionHandler:^(BOOL success, NSError *error) {
+        if (success) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+#ifdef IS_MEDIATION
+                // 聚合维度首次预缓存
+                [self useMediationPreload];
+#endif
+//                 splash AD demo
+//                [self addSplashAD];
+//                 private config for demo
+//                [self configDemo];
+//                 Setup live stream ad
+#if __has_include(<BUAdLive/BUAdLive.h>)
+                [BUAdSDKManager setUpLiveAdSDK];
+#endif
+                
+            });
+        }
+    }];
+    
+//    [self playerCoustomAudio];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [self requestIDFATracking];
+    });
 }
 
 
@@ -295,6 +344,8 @@ static NSMapTable *mapTable;
     [self showMain];
     [self.window makeKeyAndVisible];
 //    [self test];
+    
+    [self setupBUAdSDK];
     
     return YES;
 }

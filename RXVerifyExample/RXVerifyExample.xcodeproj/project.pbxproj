@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B0C57042B3459E9004FEE86 /* RXJSONViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0C57032B3459E9004FEE86 /* RXJSONViewController.m */; };
 		2B1CC52C2761A9250016ADE1 /* RXNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1CC52B2761A9250016ADE1 /* RXNoteViewController.m */; };
 		2B1CC52F2761A9330016ADE1 /* RXNoteWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1CC52E2761A9330016ADE1 /* RXNoteWebViewController.m */; };
 		2B1CC532277030290016ADE1 /* RXHeatMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1CC531277030290016ADE1 /* RXHeatMapViewController.m */; };
@@ -27,6 +28,7 @@
 		2BC34EED2506473000B91D91 /* RXPreHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC34EEC2506473000B91D91 /* RXPreHeader.m */; };
 		2BE33E1F24B41C710000462B /* RXJSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE33E1E24B41C710000462B /* RXJSViewController.m */; };
 		2BE33E2424B457650000462B /* rxtest.js in Resources */ = {isa = PBXBuildFile; fileRef = 2BE33E2324B457650000462B /* rxtest.js */; };
+		2BF0F851298D2DA300F51643 /* NSMutableDictionary+RXVerify.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF0F850298D2DA300F51643 /* NSMutableDictionary+RXVerify.m */; };
 		5803F0CF1C190FFC0071FDDA /* RVRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5803F0CD1C190FFC0071FDDA /* RVRefreshViewController.m */; };
 		5803F0D01C190FFC0071FDDA /* RVRefreshViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5803F0CE1C190FFC0071FDDA /* RVRefreshViewController.xib */; };
 		5803F0D41C1913260071FDDA /* RVScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5803F0D21C1913260071FDDA /* RVScrollViewController.m */; };
@@ -510,6 +512,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B0C57022B3459E9004FEE86 /* RXJSONViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXJSONViewController.h; sourceTree = "<group>"; };
+		2B0C57032B3459E9004FEE86 /* RXJSONViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RXJSONViewController.m; sourceTree = "<group>"; };
 		2B1CC52A2761A9250016ADE1 /* RXNoteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXNoteViewController.h; sourceTree = "<group>"; };
 		2B1CC52B2761A9250016ADE1 /* RXNoteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RXNoteViewController.m; sourceTree = "<group>"; };
 		2B1CC52D2761A9330016ADE1 /* RXNoteWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXNoteWebViewController.h; sourceTree = "<group>"; };
@@ -549,6 +553,8 @@
 		2BE33E1D24B41C710000462B /* RXJSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXJSViewController.h; sourceTree = "<group>"; };
 		2BE33E1E24B41C710000462B /* RXJSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RXJSViewController.m; sourceTree = "<group>"; };
 		2BE33E2324B457650000462B /* rxtest.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = rxtest.js; sourceTree = "<group>"; };
+		2BF0F84F298D2DA300F51643 /* NSMutableDictionary+RXVerify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+RXVerify.h"; sourceTree = "<group>"; };
+		2BF0F850298D2DA300F51643 /* NSMutableDictionary+RXVerify.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+RXVerify.m"; sourceTree = "<group>"; };
 		5803F0CC1C190FFC0071FDDA /* RVRefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVRefreshViewController.h; sourceTree = "<group>"; };
 		5803F0CD1C190FFC0071FDDA /* RVRefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVRefreshViewController.m; sourceTree = "<group>"; };
 		5803F0CE1C190FFC0071FDDA /* RVRefreshViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RVRefreshViewController.xib; sourceTree = "<group>"; };
@@ -2223,6 +2229,8 @@
 			children = (
 				8D580EDF23B1B2270055E63B /* NSTimer+RXVerify.h */,
 				8D580EE023B1B2270055E63B /* NSTimer+RXVerify.m */,
+				2BF0F84F298D2DA300F51643 /* NSMutableDictionary+RXVerify.h */,
+				2BF0F850298D2DA300F51643 /* NSMutableDictionary+RXVerify.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -3001,6 +3009,8 @@
 				E87C044F21D904F100B90D74 /* CharacterSet */,
 				E860510020A2E4CA0016F6C9 /* RVArrayCopyViewController.h */,
 				E860510120A2E4CA0016F6C9 /* RVArrayCopyViewController.m */,
+				2B0C57022B3459E9004FEE86 /* RXJSONViewController.h */,
+				2B0C57032B3459E9004FEE86 /* RXJSONViewController.m */,
 			);
 			path = CoreFoundation;
 			sourceTree = "<group>";
@@ -4009,16 +4019,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RXVerifyExample/Pods-RXVerifyExample-resources.sh",
-				"${PODS_ROOT}/AMapNavi/AMapNaviKit.framework/AMapNavi.bundle",
-				"${PODS_ROOT}/AMapNavi/AMapNaviKit.framework/AMap.bundle",
+				"${PODS_ROOT}/Ads-CN/SDK/CSJAdSDK.bundle",
 				"${PODS_ROOT}/Bytedance-UnionAD/Bytedance-UnionAd/Frameworks/BUAdSDK.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/RX3_TencentLiteSDK/Paramount.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMapNavi.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CSJAdSDK.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BUAdSDK.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Paramount.bundle",
@@ -4085,6 +4093,7 @@
 				8D05CB6723A3AE0400F37A09 /* RXNotificationSecondViewController.m in Sources */,
 				E87C044B21D7133B00B90D74 /* RXMethodSwizzleSafelyObject.m in Sources */,
 				E8F8D7F7219133F8007AB027 /* RXAFSecurityPolicy.m in Sources */,
+				2BF0F851298D2DA300F51643 /* NSMutableDictionary+RXVerify.m in Sources */,
 				58D89EDA22B4C8E800687338 /* VKDownloadOperation.m in Sources */,
 				C9A7110D1D7BA0880002E703 /* RVCopyViewController.m in Sources */,
 				58901C3E22AE6125005D0C4D /* VKBaseLevelView.m in Sources */,
@@ -4098,6 +4107,7 @@
 				E818A0F42217B9440053ED3E /* RXARCHasAttributeObject.m in Sources */,
 				E8433D7E20EDBE78004A7FBC /* RXMacroViewController.m in Sources */,
 				E86050FE20A2A1840016F6C9 /* RVAddMethodViewController.m in Sources */,
+				2B0C57042B3459E9004FEE86 /* RXJSONViewController.m in Sources */,
 				E87C045221D9051000B90D74 /* RXCharacterSetTestObject.m in Sources */,
 				8D580F1E23B35EE00055E63B /* RXMasonryCase8ViewController.m in Sources */,
 				8D580F1523B33FF20055E63B /* RXMasonryCase6ItemView.m in Sources */,
@@ -4579,7 +4589,7 @@
 				GCC_PREFIX_HEADER = "RXVerifyExample/RXVerifyExample-Prefix.pch";
 				INFOPLIST_FILE = RXVerifyExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks /usr/lib/swift";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/RXVerifyExample/Third/UnionPay",
@@ -4603,7 +4613,7 @@
 				GCC_PREFIX_HEADER = "RXVerifyExample/RXVerifyExample-Prefix.pch";
 				INFOPLIST_FILE = RXVerifyExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks /usr/lib/swift";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/RXVerifyExample/Third/UnionPay",

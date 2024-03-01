@@ -16,7 +16,8 @@ pod 'React'
 
 pod 'YogaKit'
 
-pod 'lottie-ios'
+#pod 'lottie-ios'
+pod 'lottie-ios', '~> 2.5.3'
 
 
 pod 'YTKNetwork'
@@ -41,7 +42,7 @@ pod 'RXVerifyButton'
 
 pod 'RXTextView'
 
-pod 'AMapNavi'
+#pod 'AMapNavi'
 
 pod 'HWWeakTimer'
 
@@ -120,6 +121,8 @@ pod 'SDWebImageWebPCoder'
 # pod 'FBSDKShareKit'
  
  pod 'FMDB'
+ 
+ pod 'Ads-CN', '5.8.1.2'
 
 
 inhibit_all_warnings!

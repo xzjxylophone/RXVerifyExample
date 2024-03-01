@@ -73,6 +73,12 @@ static NSInteger a = 0;
     NSInteger x2 = ceil(x);
     return x2 / 2.0f;
 }
+
+- (void)apngTest {
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 100, 100, 100)];
+    [imageView sd_setImageWithURL:[NSURL URLWithString:@"http://imbeta.cn/demo/apng/elephant.png"]];
+    [self.view addSubview:imageView];
+}
 - (void)appIVTest {
     UIImageView *iv1 = [UIImageView new];
     [iv1 sd_setImageWithURL:[NSURL URLWithString:@"https://t8.baidu.com/it/u=1484500186,1503043093&fm=79&app=86&size=h300&n=0&g=4n&f=jpeg?sec=1590750901&t=519ce75c1da6810cca9a5fe5561712a1"] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
@@ -157,6 +163,8 @@ static NSInteger a = 0;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+//    [self apngTest];
+    
 //    NSString *test1 = @"1111";
 //    if (!test1.length) {
 //        NSLog(@"11");
@@ -217,11 +225,11 @@ static NSInteger a = 0;
     
 //    NSObject *object1 = [NSObject new];
     
-    NSDictionary *dict = nil;
-    NSMutableDictionary *dict2 = [NSMutableDictionary dictionaryWithDictionary:dict];
-    NSLog(@"dict2:%@", dict2);
-    
-    [self test_array_range];
+//    NSDictionary *dict = nil;
+//    NSMutableDictionary *dict2 = [NSMutableDictionary dictionaryWithDictionary:dict];
+//    NSLog(@"dict2:%@", dict2);
+//    
+//    [self test_array_range];
     
 //    CGFloat ab = 3.2;
 //    CGFloat abc = 3.5;
@@ -280,7 +288,7 @@ static NSInteger a = 0;
         @"RXStrangeXR", @"RXNotificationFirst", @"RXViewVisiable",
         @"RXVisiableTest", @"RXTestManager", @"RXJS",
         @"RXCSJ", @"RVWeb", @"RXGCDHTTPRequestHeaders", @"HeatMap",
-        @"RXNote", @"RXUIAnimation"
+        @"RXNote", @"RXUIAnimation", @"RXJSON"
     ];
     
     // 数组倒叙
